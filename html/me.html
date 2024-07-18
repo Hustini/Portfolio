@@ -44,84 +44,66 @@
   </nav>
 </header>
 <main>
-  <div id="default-carousel" class="relative w-full h-[600px] p-10" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-full overflow-hidden rounded-lg">
-      <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="../img/me/placeholder.jpeg" class="absolute block w-full h-full object-cover" alt="...">
+  <div class="flex flex-wrap justify-center">
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/codewars.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Codewars</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">This is my collection of Codewars solutions! Here, you'll find a variety of coding challenges I've tackled on Codewars, a platform designed to enhance programming skills. Each solution showcases my approach to solving complex problems and can serve as a helpful resource for others looking to learn. I use this repository to store and versioning my solutions.</p>
+        <a href="https://github.com/Hustini/codewars" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
       </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img src="../img/me/placeholder2.jpeg" class="absolute block w-full h-full object-cover" alt="...">
+    </div>
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/wishle.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Wishle</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">I created a fun and addictive word game similar to Wordle, but with 4-letter words and unlimited gameplay. You can play as many times as you want and get instant feedback on your guesses. I built this game using HTML, CSS, and JavaScript. This project helped me improve my coding skills and learn more about user interface design. To test the game click <a href="https://wishle.vercel.app"><strong>here</strong></a>.</p>
+        <a href="https://github.com/Hustini/Wordle" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
       </div>
     </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/pathfinder.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Astar Pathfinder</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">I developed an A* pathfinder to improve my algorithm skills. The project involved creating a visual representation of the A* algorithm to find the shortest path between two points on a grid. I used Pygame to build the graphical interface and display the algorithm in action. This project was a great learning experience, and I utilized various YouTube videos and websites to help me understand and implement the algorithm effectively.</p>
+        <a href="https://github.com/Hustini/astar_pathfinder" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
+      </div>
     </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-1/2 left-10 transform -translate-y-1/2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-      </svg>
-      <span class="sr-only">Previous</span>
-    </span>
-    </button>
-    <button type="button" class="absolute top-1/2 right-10 transform -translate-y-1/2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-      </svg>
-      <span class="sr-only">Next</span>
-    </span>
-    </button>
-  </div>
-
-  <div class="flex flex-col md:flex-row gap-6 m-4 md:m-10 p-4 md:p-5">
-    <div class="flex-none w-full md:w-1/3">
-      <img src="../img/me/games.jpeg" class="w-full h-auto rounded-lg" alt="games">
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/smashbros.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Smashbros</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">I created a 2D platform fighting game inspired by Super Smash Bros using Pygame. The game features pixel art graphics and dynamic gameplay where players control characters that battle on a floating platform, aiming to deplete their opponent's health. You can see the health bars at the top, making it easy to track each player's status. Developing this game helped me improve my skills in Python and game development, as well as learn more about creating pixel art and smooth animations.</p>
+        <a href="https://github.com/Hustini/smashbros" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
+      </div>
     </div>
-    <div class="flex-grow md:w-2/3">
-      <h5 class="mb-2 lg:mt-20 text-3xl md:text-3xl font-bold tracking-tight text-gray-900">Videogames</h5>
-      <p class="mb-3 font-normal text-justify lg:text-xl text-gray-500">
-        Playing video games has always been a passion of mine. Whether it's exploring vast open worlds, solving intricate puzzles, or competing in intense multiplayer matches, I find video games to be a great way to unwind and challenge myself. They offer a unique blend of storytelling, art, and technology that I deeply appreciate. Through gaming, I've developed problem-solving skills, strategic thinking, and the ability to stay calm under pressure. It's not just a hobby, but a way to connect with friends and join a global community of players.
-      </p>
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/flappybird.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Flappy Bird</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">I recreated the classic Flappy Bird game using Python and Pygame. In this 2D game, players control a bird, navigating it through a series of pipes by pressing the space bar to keep it in the air. The game features simple yet engaging pixel art graphics, smooth animations, and an addictive gameplay loop. This project not only allowed me to refine my Python and game development skills but also gave me valuable experience in creating intuitive user interfaces and handling game physics. Check out the code and give it a try!</p>
+        <a href="https://github.com/Hustini/flappy_bird" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="flex flex-col md:flex-row gap-6 m-4 md:m-10 p-4 md:p-5">
-    <div class="flex-grow md:w-2/3">
-      <h5 class="mb-2 lg:mt-20 text-3xl md:text-3xl font-bold tracking-tight text-gray-900">Motorcycle</h5>
-      <p class="mb-3 font-normal text-justify lg:text-xl text-gray-500">
-        Playing video games has always been a passion of mine. Whether it's exploring vast open worlds, solving intricate puzzles, or competing in intense multiplayer matches, I find video games to be a great way to unwind and challenge myself. They offer a unique blend of storytelling, art, and technology that I deeply appreciate. Through gaming, I've developed problem-solving skills, strategic thinking, and the ability to stay calm under pressure. It's not just a hobby, but a way to connect with friends and join a global community of players.
-      </p>
-    </div>
-    <div class="flex-none w-full md:w-1/3">
-      <img src="../img/me/gym_me.png" class="w-full h-auto rounded-lg" alt="motorcycle">
-    </div>
-  </div>
-  <div class="flex flex-col md:flex-row gap-6 m-4 md:m-10 p-4 md:p-5">
-    <div class="flex-none w-full md:w-1/3">
-      <img src="../img/me/gym_me.png" class="w-full h-auto rounded-lg" alt="gym">
-    </div>
-    <div class="flex-grow md:w-2/3">
-      <h5 class="mb-2 lg:mt-20 text-3xl md:text-3xl font-bold tracking-tight text-gray-900">Gym</h5>
-      <p class="mb-3 font-normal text-justify lg:text-xl text-gray-500">
-        Playing video games has always been a passion of mine. Whether it's exploring vast open worlds, solving intricate puzzles, or competing in intense multiplayer matches, I find video games to be a great way to unwind and challenge myself. They offer a unique blend of storytelling, art, and technology that I deeply appreciate. Through gaming, I've developed problem-solving skills, strategic thinking, and the ability to stay calm under pressure. It's not just a hobby, but a way to connect with friends and join a global community of players.
-      </p>
-    </div>
-  </div>
-  <div class="flex flex-col md:flex-row gap-6 m-4 md:m-10 p-4 md:p-5">
-    <div class="flex-grow md:w-2/3">
-      <h5 class="mb-2 lg:mt-20 text-3xl md:text-3xl font-bold tracking-tight text-gray-900">Books</h5>
-      <p class="mb-3 font-normal text-justify lg:text-xl text-gray-500">
-        Playing video games has always been a passion of mine. Whether it's exploring vast open worlds, solving intricate puzzles, or competing in intense multiplayer matches, I find video games to be a great way to unwind and challenge myself. They offer a unique blend of storytelling, art, and technology that I deeply appreciate. Through gaming, I've developed problem-solving skills, strategic thinking, and the ability to stay calm under pressure. It's not just a hobby, but a way to connect with friends and join a global community of players.
-      </p>
-    </div>
-    <div class="flex-none w-full md:w-1/3">
-      <img src="../img/me/gym_me.png" class="w-full h-auto rounded-lg" alt="books">
+    <div class="max-w-xl m-10 border border-gray-200 bg-gray-200 rounded-lg shadow">
+      <img class="rounded-t-lg" src="../img/projects/pong.png" alt=""/>
+      <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Pong</h5>
+        <p class="text-justify mb-3 font-normal text-gray-900">I developed a classic Pong game using Python and Pygame, marking my first venture into game development. This 2D game faithfully recreates the original arcade experience, with players controlling paddles to bounce a ball back and forth, aiming to outscore their opponent. Working on this project provided a foundational understanding of game mechanics, collision detection, and user input handling. It was instrumental in improving my Python skills and getting familiar with Pygame. Check out the code and enjoy the timeless challenge of Pong!</p>
+        <a href="https://github.com/Hustini/Pong" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-900 rounded-lg hover:bg-indigo-500 focus:ring-4 focus:outline-none focus:ring-blue-300">
+          Read more
+        </a>
+      </div>
     </div>
   </div>
 </main>
