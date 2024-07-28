@@ -12,7 +12,7 @@
 <body>
 <header>
   <nav class="py-5 px-8 bg-white sticky top-0 border-b border-gray-100">
-    <div class="container md:px-12 md:flex md:items-center md:justify-between">
+    <div class="container mx-auto flex items-center justify-between md:px-12">
       <div class="flex items-center justify-between">
         <a href="#" class="flex items-center pl-2 sm:pl-2 md:pl-0">
           <img src="../img/signature.png" alt="logo" class="h-10 mr-3">
@@ -24,21 +24,23 @@
           </svg>
         </span>
       </div>
-      <ul class="p-5 z-10 absolute bg-white/80 backdrop-blur w-full left-0 py-4 opacity-0 top-[-400px]
-      transition-all ease-in duration-500 md:p-0 md:flex md:items-center md:space-x-8 md:static md:w-auto md:opacity-100">
+      <ul id="menu" class="p-5 z-10 absolute bg-white/80 backdrop-blur w-full left-0 py-4 opacity-0 top-[-400px]
+      transition-all ease-in duration-500 md:p-0 md:flex md:items-center md:space-x-8 md:static md:w-auto md:opacity-100 md:top-auto md:bg-transparent">
         <li class="md:my-0">
           <a href="../index.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Home</a>
         </li>
         <li class="my-6 md:my-0">
-          <a href="../html/projects.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Projects</a>
+          <a href="projects.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Projects</a>
         </li>
         <li class="my-6 md:my-0">
-          <a href="../html/me.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Who am I</a>
+          <a href="me.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Who am I</a>
         </li>
-        <a href="https://github.com/Hustini">
-          <button type="button" class="w-full text-white bg-gray-900 font-medium rounded-lg px-3.5 py-3 text-center
-          hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">Github</button>
-        </a>
+        <li class="my-6 md:my-0">
+          <a href="https://github.com/Hustini">
+            <button type="button" class="w-full text-white bg-gray-900 font-medium rounded-lg px-3.5 py-3 text-center
+            hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">Github</button>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
