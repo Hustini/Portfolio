@@ -11,69 +11,71 @@
 </head>
 <body>
 <header>
-  <nav class="py-5 px-8 bg-white sticky top-0 border-b border-gray-100">
-    <div class="container md:px-12 md:flex md:items-center md:justify-between">
-      <div class="flex items-center justify-between">
-        <a href="#" class="flex items-center pl-2 sm:pl-2 md:pl-0">
-          <img src="img/signature.png" alt="logo" class="h-10 mr-3">
-          <span class="text-2xl text-gray-900 font-sans font-bold">Salih Ejder</span>
-        </a>
-        <span class="block mx-2 text-3xl bg-gray-100 p-2 rounded-lg md:hidden">
-          <svg name="menu" onclick="Menu(this)" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-          </svg>
-        </span>
-      </div>
-      <ul class="p-5 z-10 absolute bg-white/80 backdrop-blur w-full left-0 py-4 opacity-0 top-[-400px]
-      transition-all ease-in duration-500 md:p-0 md:flex md:items-center md:space-x-8 md:static md:w-auto md:opacity-100">
-        <li class="md:my-0">
-          <a href="index.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Home</a>
+  <nav class="py-5 px-4 bg-white sticky top-0 border-b border-gray-100">
+    <div class="container mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center">
+        <img src="img/signature.png" alt="logo" class="h-10 mr-3">
+        <span class="text-2xl text-gray-900 font-sans font-bold">Salih Ejder</span>
+      </a>
+      <button class="text-3xl bg-gray-100 p-2 rounded-lg md:hidden" onclick="Menu(this)">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+      </button>
+      <ul class="hidden md:flex md:items-center md:space-x-8">
+        <li><a href="index.html" class="font-medium text-gray-900 hover:text-indigo-600">Home</a></li>
+        <li><a href="html/projects.html" class="font-medium text-gray-900 hover:text-indigo-600">Projects</a></li>
+        <li><a href="html/me.html" class="font-medium text-gray-900 hover:text-indigo-600">Who am I</a></li>
+        <li>
+          <a href="https://github.com/Hustini">
+            <button type="button" class="text-white bg-gray-900 font-medium rounded-lg px-3.5 py-3 hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">Github</button>
+          </a>
         </li>
-        <li class="my-6 md:my-0">
-          <a href="html/projects.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Projects</a>
-        </li>
-        <li class="my-6 md:my-0">
-          <a href="html/me.html" class="font-medium duration-500 text-gray-900 hover:text-indigo-600">Who am I</a>
-        </li>
-        <a href="https://github.com/Hustini">
-          <button type="button" class="w-full text-white bg-gray-900 font-medium rounded-lg px-3.5 py-3 text-center
-          hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">Github</button>
-        </a>
       </ul>
     </div>
   </nav>
+  <ul class="absolute left-0 w-full p-5 z-10 bg-white/80 backdrop-blur transition-all ease-in duration-500 opacity-0 top-[-400px] md:hidden">
+    <li class="my-2"><a href="index.html" class="block font-medium text-gray-900 hover:text-indigo-600">Home</a></li>
+    <li class="my-2"><a href="html/projects.html" class="block font-medium text-gray-900 hover:text-indigo-600">Projects</a></li>
+    <li class="my-2"><a href="html/me.html" class="block font-medium text-gray-900 hover:text-indigo-600">Who am I</a></li>
+    <li class="my-2">
+      <a href="https://github.com/Hustini">
+        <button type="button" class="w-full text-white bg-gray-900 font-medium rounded-lg px-3.5 py-3 hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">Github</button>
+      </a>
+    </li>
+  </ul>
 </header>
 <main>
-  <section id="home" class="py-5">
-    <div class="container flex flex-col md:flex-row flex-wrap items-center justify-center mx-auto mt-10 md:px-12">
-      <div class="mb-14 lg:mb-0 lg:w-1/2">
-        <h1 class="max-w-xl text-[2.9rem] leading-none text-gray-900 font-extrabold font-sans text-center md:text-left lg:text-5xl lg:leading-tight mb-5">
+  <section id="home" class="py-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+      <div class="mb-14 lg:mb-0 lg:w-1/2 px-4 md:px-12">
+        <h1 class="text-[2.9rem] leading-none text-gray-900 font-extrabold font-sans text-center md:text-left lg:text-5xl lg:leading-tight mb-5">
           Hello, My name is Salih
         </h1>
-        <p class="max-w-xl text-center text-gray-500 md:text-left lg:max-w-md">
-          I'm currently working on this website to present myself. To make it short I like video games, books, motorcycles and sports. I further more like to challenge myself with new projects to improve my skills.
+        <p class="text-center text-gray-500 md:text-left lg:max-w-md">
+          I'm currently working on this website to present myself. To make it short I like video games, books, motorcycles and sports. I furthermore like to challenge myself with new projects to improve my skills.
         </p>
         <div class="flex justify-center mt-14 md:justify-start">
-          <button type="button" class="text-white bg-gray-900 font-medium rounded-lg px-5 py-4 text-center hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">
+          <button type="button" class="text-white bg-gray-900 font-medium rounded-lg px-5 py-4 hover:bg-indigo-500 hover:drop-shadow-md transition duration-300 ease-in-out">
             <a href="html/me.html">Learn more</a>
           </button>
         </div>
       </div>
-      <div class="lg:w-1/2">
-        <img class="ml-auto mr-[3rem]" src="img/me/me.jpg" alt="hero-img" width="400">
+      <div class="lg:w-1/2 flex justify-center px-4 md:px-12">
+        <img src="img/me/me.jpg" alt="hero-img" class="w-full max-w-md">
       </div>
     </div>
   </section>
 </main>
-<footer class="bg-gray-100 text-white">
-  <div class="container mx-auto py-10 text-center">
+<footer class="bg-gray-100 text-white py-10">
+  <div class="container mx-auto text-center">
     <div class="flex justify-center space-x-4 mb-8">
       <a href="https://github.com/Hustini" class="text-gray-900 hover:text-indigo-500 transition duration-300 ease-in-out"><i class="bx bxl-github text-3xl"></i></a>
       <a href="https://www.instagram.com/_salih_ejder/" class="text-gray-900 hover:text-indigo-500 transition duration-300 ease-in-out"><i class="bx bxl-instagram text-3xl"></i></a>
       <a href="mailto:ejdersalih02@gmail.com" class="text-gray-900 hover:text-indigo-500 transition duration-300 ease-in-out"><i class="bx bxs-envelope text-3xl"></i></a>
     </div>
     <div>
-      <p class="text-gray-900">Copyright &copy;2024 - All right reserved</p>
+      <p class="text-gray-900">Copyright &copy;2024 - All rights reserved</p>
     </div>
   </div>
 </footer>
