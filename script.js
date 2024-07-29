@@ -1,12 +1,12 @@
-function Menu(e) {
-    let list = document.getElementById('menu');
-    if (e.name === "menu") {
-        e.name = "close";
-        list.classList.add("top-[80px]", "opacity-100");
-        list.classList.remove("top-[-400px]", "opacity-0");
-    } else {
-        e.name = "menu";
-        list.classList.remove("top-[80px]", "opacity-100");
-        list.classList.add("top-[-400px]", "opacity-0");
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector("[data-collapse-toggle]");
+    const mobileMenu = document.getElementById("mobile-menu-2");
+    const openIcon = toggleButton.querySelector("svg:first-child");
+    const closeIcon = toggleButton.querySelector("svg:last-child");
+
+    toggleButton.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+        openIcon.classList.toggle("hidden");
+        closeIcon.classList.toggle("hidden");
+    });
+});
