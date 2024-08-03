@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector("[data-collapse-toggle]");
-    const mobileMenu = document.getElementById("mobile-menu-2");
-    const openIcon = toggleButton.querySelector("svg:first-child");
-    const closeIcon = toggleButton.querySelector("svg:last-child");
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById("menu-button");
+    const menu = document.getElementById('mobile-menu-2');
+    const openIcon = document.getElementById('menu-open');
+    const closeIcon = document.getElementById('menu-close');
 
-    toggleButton.addEventListener("click", function() {
-        mobileMenu.classList.toggle("hidden");
-        openIcon.classList.toggle("hidden");
-        closeIcon.classList.toggle("hidden");
-    });
+    toggleButton.addEventListener("click", function () {
+        menu.classList.toggle("hidden")
+        openIcon.classList.toggle("hidden")
+        closeIcon.classList.toggle("hidden")
+    })
 });
