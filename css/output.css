@@ -658,6 +658,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1111,6 +1115,15 @@ video {
 @media (min-width: 1024px) {
   .lg\:order-1 {
     order: 1;
+  }
+
+  .lg\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .lg\:mb-0 {
